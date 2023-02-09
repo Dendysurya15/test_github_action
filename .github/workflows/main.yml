@@ -16,7 +16,4 @@ jobs:
         password: ${{secrets.FTP_PASS}}
         protocol: ftps
         port: ${{secrets.FTP_PORT}}
-        exclude:  |
-          **/.git*
-          **/.git*/**
-          **/.github*/**
+        exclude: "[**/.git*,**/.git*/**,**/.github*/**]"
